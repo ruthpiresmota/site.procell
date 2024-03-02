@@ -1,0 +1,102 @@
+@media (max-width: 860px) {
+    .logo-procell {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .div-endereco {
+        text-align: center;
+    }
+
+    .ul-social {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .ul-social li:nth-child(9) {
+        display: block;
+    }
+}
+
+@media (max-width: 710px) {
+    .body-index {
+        background: #49644e2b;
+        min-width: 375px;
+        background: #1b251d2b;
+    }
+
+    header {
+        flex-direction: row-reverse;
+    }
+
+    .div-menu {
+        display: block;
+    }
+
+    .nav-menu .ul-menu {
+        display: none;
+        width: 400px;
+        background-color: rgba(89, 151, 147, 0.8);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    input:checked~.ul-menu {
+        display: block;
+        animation: hamburgAnim .3s linear forwards;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        z-index: 1;
+    }
+
+    .nav-menu .ul-menu a {
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+
+    .ul-menu a::after {
+        bottom: 40px;
+    }
+
+    .nav-menu .ul-menu a.activa::after {
+        bottom: 40px;
+    }
+
+    .section-iframe {
+        min-height: 200vh;
+    }
+
+    .ul-social {
+        flex-wrap: wrap;
+    }
+
+    .div-main .h2-info-nos {
+        font-size: 20px;
+    }
+    
+    .div-sobrenos .p-info-nos {
+        font-size: 40px;
+    }
+}
+
+@keyframes hamburgAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        animation-timing-function: ease-in;
+        transform: translateX(0);
+    }
+}
